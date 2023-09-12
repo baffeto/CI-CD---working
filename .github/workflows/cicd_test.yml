@@ -42,8 +42,8 @@ jobs:
         uses: appleboy/ssh-action@master
         with:
           host: 95.163.230.189
-          username: ${{ secrets.SSH_USERNAME }}
-          password: ${{ secrets.SSH_PASSWORD }}
+          username: ivan
+          password: ivan
           script:
             cd /home/ivan/CI-CD---working/project
             git pull origin cicd
