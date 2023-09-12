@@ -44,4 +44,4 @@ jobs:
           host: 95.163.230.189
           username: ivan
           password: ivan
-          script: expect /home/ivan/CI-CD---working/project/pull.exp
+          script: sudo expect /home/ivan/CI-CD---working/project/pull.exp
