@@ -37,3 +37,14 @@ jobs:
       
       - name: Надпись
         run: echo 'eeee'
+
+      - name: Деплой
+        uses: appleboy/ssh-action@master
+        with:
+          host: 95.163.230.189
+          username: 'ivan'
+          password: 1234
+          script:
+            cd /home/ivan/CI-CD---working/project
+            git pull origin cicd
+            sudo systemctl restart gunicorn
