@@ -45,6 +45,6 @@ jobs:
           username: ivan
           password: ivan
           script:
-            cd /home/ivan/CI-CD---working/project
-            git pull origin cicd
-            sudo systemctl restart gunicorn
+            - cd /home/ivan/CI-CD---working/project
+            - git pull origin cicd
+            - sudo systemctl restart gunicorn
