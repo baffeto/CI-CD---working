@@ -41,9 +41,9 @@ jobs:
       - name: Деплой
         uses: appleboy/ssh-action@master
         with:
-          host: 95.163.230.189
-          username: 'ivan'
-          password: 1234
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USERNAME }}
+          password: ${{ secrets.SSH_PASSWORD }}
           script:
             cd /home/ivan/CI-CD---working/project
             git pull origin cicd
