@@ -44,7 +44,4 @@ jobs:
           host: 95.163.230.189
           username: ivan
           password: ivan
-          script:
-            - cd /home/ivan/CI-CD---working/project
-            - git pull origin cicd
-            - sudo systemctl restart gunicorn
+          script: expect /home/ivan/CI-CD---working/project/pull.exp
